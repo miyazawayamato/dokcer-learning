@@ -1,0 +1,2 @@
+Dockerfileは、Dockerのイメージを自動で作成してくれるファイル。 docker build . と入力するだけで、 Dockerシステムは Dockerfileを自動で読み込み、書かれている内容の通りの Dockerイメージを作成してくれます。
+FROM は、ベースとなる Dockerイメージを指定
