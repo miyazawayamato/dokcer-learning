@@ -1,9 +1,9 @@
 version: '3.6'
 services:
-  java:
-    build: ./docker/java
+  web:
+    image: nginx:1.21.0
     ports:
-      - 8080:8080
-    tty: true
+      - '8000:80'
     volumes:
-      - ./server/src:/usr/src:cached
+      - ./docker/web/default.conf:/etc/nginx/conf.d/default.conf
+      - .:/var/www/html
