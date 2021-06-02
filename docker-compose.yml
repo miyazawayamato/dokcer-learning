@@ -1,9 +1,10 @@
-version: '3.6'
+version: '3'
 services:
-  java:
-    build: ./docker/java
-    ports:
-      - 8080:8080
+  python3:
+    restart: always
+    build: .
+    container_name: 'python3'
+    working_dir: '/root/'
     tty: true
     volumes:
-      - ./server/src:/usr/src:cached
+      - ./opt:/root/opt
