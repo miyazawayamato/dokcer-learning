@@ -5,6 +5,20 @@ package question1;
 // 車種（モデル）：自家用ワンボックス車
 // 乗車定員：7人
 
-public class MyCar {
+public class MyCar extends AbstractAutomobile{
     
+    MyCar() {
+        super(CarType.STANDERD_CAR);
+    }
+    
+    private int Capacity = 7;
+    private String CarModel = "自家用ワンボックス車";
+    
+    public  int getCapacity() {
+        return this.Capacity;
+    }
+    
+    public String getCarModel() {
+        return this.CarModel;
+    }
 }
