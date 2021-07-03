@@ -14,10 +14,12 @@ public class MyCar extends AbstractAutomobile{
     private int Capacity = 7;
     private String CarModel = "自家用ワンボックス車";
     
+    @Override //忘れない
     public  int getCapacity() {
         return this.Capacity;
     }
     
+    @Override
     public String getCarModel() {
         return this.CarModel;
     }
