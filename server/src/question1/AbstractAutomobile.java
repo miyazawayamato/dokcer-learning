@@ -12,8 +12,7 @@ public abstract class AbstractAutomobile {
         LARGE_CAR,        //大型車
         OVERSIZE        //特大車
     } ;
-
-
+    // Enum(列挙型)
 
     /**
      * コンストラクタ
